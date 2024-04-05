@@ -1,6 +1,6 @@
 # Liste von werten und Häufigkeiten ausbreiten ("explode")
-# Werte und Häufigkeiten sind durch Leerzeichen getrennt
-# vgl das gleichnamige LISP-Programm
+# Werte und Häufigkeiten sind durch Kommata getrennt
+# vgl das entsprechende LISP-Programm
 
 
 BEGIN { FS=","}
@@ -10,6 +10,7 @@ BEGIN { FS=","}
 }
 
 function elargi(x,h)
+# rekursiv!
 {
     if (h>0)
     {
